@@ -67,5 +67,14 @@ src/
 ├── auth/          → register, login, JWT, roles, admin seed
 ├── interview/     → AI interview generation + CRUD
 ├── study/         → AI study assistant + CRUD
+## Screenshots
+assets/AI-study-Interview-Prep-API.jpg
+![Swagger UI] (AI-study-Interview-Prep-API.jpg)
+
+![LoginTokenResponse](authtokenlogin-swagger.jpg)
+
+![Interview-Response](generate-interview-Swagger response.jpg)
+
+![Study-Response] (generate-study Swagger response.jpg)
 ├── ai/            → Groq AI service (shared)
 └── Schemas/       → MongoDB schemas
