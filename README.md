@@ -53,8 +53,7 @@ PORT=3000
 npm run start:dev
 # Visit http://localhost:3000/api for Swagger docs
 ```
-## Screenshots
-assets/AI-study-Interview-Prep-API.jpg
+
 ##Archietecture
 src/
 ├── auth/          → register, login, JWT, roles, admin seed
