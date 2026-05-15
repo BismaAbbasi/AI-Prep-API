@@ -39,44 +39,6 @@ GET  /study/:id            → 🔒 get one session
 DELETE /study/:id          → 🔒 delete session
 🔒 = requires JWT token
 
-## Sample AI Response — Interview
-
-```json
-{
-  "questions": [
-    {
-      "question": "Explain the difference between JWT and Session auth",
-      "modelAnswer": "JWT is stateless...",
-      "difficulty": "medium",
-      "tip": "Mention scalability advantages"
-    }
-  ]
-}
-```
-
-## Sample AI Response — Study
-
-```json
-{
-  "summary": "NestJS Guards are classes that implement...",
-  "mcqs": [
-    {
-      "question": "Which interface must Guards implement?",
-      "options": ["CanActivate", "CanRun", "IsGuard", "Activate"],
-      "correctAnswer": "CanActivate",
-      "explanation": "CanActivate is the interface..."
-    }
-  ],
-  "flashcards": [
-    { "front": "What is @UseGuards()?", "back": "Decorator that applies guards to routes" }
-  ],
-  "predictedExamQuestions": ["Explain middleware vs guards in NestJS"]
-}
-```
-
-## Run Locally
-
-```bash
 git clone https://github.com/BismaAbbasi/AI-Prep-API
 cd AI-Prep-API
 npm install
@@ -91,8 +53,16 @@ PORT=3000
 npm run start:dev
 # Visit http://localhost:3000/api for Swagger docs
 ```
+## Screenshots
+assets/AI-study-Interview-Prep-API.jpg
+##Archietecture
+src/
+├── auth/          → register, login, JWT, roles, admin seed
+├── interview/     → AI interview generation + CRUD
+├── study/         → AI study assistant + CRUD
+├── ai/            → Groq AI service (shared)
+└── Schemas/       → MongoDB schemas
 
-## Architecture
 src/
 ├── auth/          → register, login, JWT, roles, admin seed
 ├── interview/     → AI interview generation + CRUD
